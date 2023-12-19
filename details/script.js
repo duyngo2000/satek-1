@@ -119,4 +119,16 @@ $(document).ready(() => {
         event.target.src = "../images/noimg.jpg"
         event.onerror = null
     })
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > $(".header").height()) {
+            for (let i = 0; i < slideMenu.length; i++) {
+                if (slideMenu[i] == detail) {
+                    $(".header").css({ "background": menu[i].background2, "box-shadow": `0px 2px 5px 5px ${menu[i].background1}` })
+                }
+            }
+        }
+        else {
+            $(".header").css({ "background": "transparent", "box-shadow": "none" })
+        }
+    })
 })
