@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #bd2c33;
+  --secondary-color: #ce6922;
+  --slide-mango: #ffcc7f;
+
+  --bs-white: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body.show {
+  overflow: hidden;
+}
+
+.section-gap {
+  padding: 100px 0 50px 0;
+}
+.fs-small {
+  font-size: 0.95em;
+}
+.fs-vrsmall {
+  font-size: 0.75em;
+}
+.heading-title {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+}
+.heading-text {
+  color: var(--secondary-color);
+}
+.heading-price {
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 7rem;
+}
+.heading-months {
+  color: #fff;
+  background-color: var(--secondary-color);
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.heading-months-text {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 0.95em;
+}
+@media (max-width: 767px) {
+  .section-gap {
+    padding: 70px 0 20px 0;
+  }
+}

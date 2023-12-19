@@ -1,0 +1,191 @@
+.section-details {
+  background: linear-gradient(180deg, #ffcc7f, #ffc852);
+}
+
+.nav-pills {
+  padding: 2px 3px;
+  background: #eebd70;
+  border-radius: 10px;
+  border: 1px solid #e2b772;
+}
+
+.nav-pills .nav-item .nav-link {
+  color: #be9856;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  border-radius: 8px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--secondary-color);
+  background-color: #fff097;
+}
+
+.nav-pills .nav-item button {
+  padding: 4px 27px;
+  font-size: 1.5em;
+}
+.tab-content .wrapper-price {
+  border: 2px solid #f9efbf;
+  background: linear-gradient(180deg, #ffec91, #ffdb4d);
+  position: relative;
+  width: 400px;
+  height: 260px;
+  border-radius: 40px;
+}
+.tab-content .wrapper-price .heading-text {
+  letter-spacing: 4px;
+  font-size: 1.075em;
+  font-weight: 500 !important;
+  margin-top: 20px;
+}
+.tab-content .wrapper-price .heading-price {
+  margin: 0;
+  margin-top: -30px;
+  font-size: 6.5rem;
+  font-weight: 800;
+}
+
+.tab-content .wrapper-price .buy-now {
+  position: absolute;
+  bottom: 25px;
+  left: -20px;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #ffb739;
+  border-radius: 11px;
+  background: linear-gradient(90deg, #fff, #ffec91);
+}
+.tab-content .wrapper-price .buy-now button {
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #fe790a, #ffb739);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.075em;
+  letter-spacing: 0.8px;
+  padding: 14px 48px;
+  border-radius: 10px;
+  width: max-content;
+}
+.tab-content .wrapper-price .buy-now .buy-now__social ul {
+  gap: 35px;
+}
+
+.tab-content .wrapper-price .buy-now .buy-now__social ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.tab-content .wrapper-price .buy-now .buy-now__social ul li a i {
+  font-size: 1.88rem;
+  color: #0035bb;
+}
+.section-details .line {
+  width: 2px;
+  height: auto;
+  background-color: var(--secondary-color);
+  margin-right: 40px !important;
+}
+.section-details .line-point {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.section-details .line-point::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffec91;
+  position: relative;
+  left: -68px;
+}
+
+.details-info {
+  color: var(--secondary-color);
+}
+
+.details-info .serving-size {
+  font-size: 0.95em;
+  font-weight: 500;
+}
+.details-info .serving-size span {
+  font-weight: 700;
+}
+.details-info .amount {
+  border: 1px solid #f3f3f3;
+  padding: 40px 30px 30px 30px;
+  border-radius: 40px;
+  position: relative;
+}
+.details-info .amount .amount-top {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color) 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 38px 1px;
+  background-repeat: repeat-x;
+  padding-bottom: 25px;
+}
+.details-info .amount .amount-main {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color) 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 38px 1px;
+  background-repeat: repeat-x;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  line-height: 1.5em;
+}
+.details-info .amount .amount-bottom {
+  margin: 0;
+  margin-top: 20px;
+}
+.some-info .detail-image {
+  border-radius: 40px;
+  border: 2px solid #f3f3f3;
+}
+@media (max-width: 991px) {
+  .details-info {
+    margin-top: 30px;
+  }
+  .section-details .line-point {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .tab-content .wrapper-price {
+    width: 300px;
+    height: 200px;
+  }
+  .tab-content .wrapper-price .heading-price {
+    font-size: 5rem;
+  }
+  .tab-content .wrapper-price .buy-now {
+    bottom: 10px;
+  }
+  .tab-content .wrapper-price .buy-now button {
+    padding: 10px 30px;
+  }
+  .tab-content .wrapper-price .buy-now .buy-now__social ul li a img {
+    width: 25px;
+    height: 25px;
+  }
+  .tab-content .wrapper-price .buy-now .buy-now__social ul li a i {
+    font-size: 1.57rem;
+  }
+  .details-info {
+    margin-top: 30px;
+  }
+}
