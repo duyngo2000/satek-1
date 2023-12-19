@@ -1,7 +1,25 @@
 .section-details {
   background: linear-gradient(180deg, #ffcc7f, #ffc852);
 }
-
+.tab-content {
+  position: relative;
+}
+.tab-content .text-inset {
+  font-family: "Rubik Dirt";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%) !important;
+  width: max-content;
+  background: linear-gradient(
+    to bottom,
+    #8caf67 0%,
+    rgba(255, 255, 255, 0.1) 80%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 5.5rem;
+}
 .nav-pills {
   padding: 2px 3px;
   background: #eebd70;
@@ -105,7 +123,6 @@
   position: relative;
   left: -68px;
 }
-
 .details-info {
   color: var(--secondary-color);
 }

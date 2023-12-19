@@ -15,6 +15,8 @@ $(document).ready(() => {
             img: "../images/detail-oi.webp",
             background1: "#bfe18d",
             background2: "#9bc461",
+            backgroundText1: "#9bc461 0%",
+            backgroundText2: "rgba(255, 255, 255, 0.1) 80%",
             text: `<span class="fw-bold">Pink Guava is</span> a sweet,
             aromatic, and crunchy pineapple commonly foundin Dong Thap
             province.Pink Guavas are yellow when ripe, cone - shaped,
@@ -31,6 +33,8 @@ $(document).ready(() => {
             img: "../images/detail-cam.webp",
             background1: "#69ddbf",
             background2: "#5cc9b4",
+            backgroundText1: "#8edfcd 0%",
+            backgroundText2: "rgba(142, 223, 205, 0.1) 80%",
             text: `<span class="fw-bold">Orange is</span> a sweet,
             aromatic, and crunchy pineapple commonly foundin Dong Thap
             province.Oranges are yellow when ripe, cone - shaped,
@@ -47,6 +51,8 @@ $(document).ready(() => {
             img: "../images/detail-mango.webp",
             background1: "#f7cb67",
             background2: "#f7ce8b",
+            backgroundText1: "#e5b46c 0%",
+            backgroundText2: "rgba(240, 194, 116, 0.1) 80%",
             text: `<span class="fw-bold">Mango is</span> a sweet,
             aromatic, and crunchy pineapple commonly foundin Dong Thap
             province.Mangos are yellow when ripe, cone - shaped,
@@ -63,6 +69,8 @@ $(document).ready(() => {
             img: "../images/detail-dua.webp",
             background1: "#f6c4c3",
             background2: "#f3afad",
+            backgroundText1: "#f7cdcc 0%",
+            backgroundText2: "rgba(245, 187, 185, 0.1) 80%",
             text: `<span class="fw-bold">Pineapple is</span> a sweet,
             aromatic, and crunchy pineapple commonly foundin Dong Thap
             province.Pineapples are yellow when ripe, cone - shaped,
@@ -79,6 +87,8 @@ $(document).ready(() => {
             img: "../images/detail-chanhday.webp",
             background1: "#b777c3",
             background2: "#995baa",
+            backgroundText1: "#9862a7 0%",
+            backgroundText2: "rgba(165, 105, 181, 0.1) 80%",
             text: `<span class="fw-bold">Passion is</span> a sweet,
             aromatic, and crunchy pineapple commonly foundin Dong Thap
             province.Passions are yellow when ripe, cone - shaped,
@@ -98,8 +108,10 @@ $(document).ready(() => {
 
     for (let i = 0; i < slideMenu.length; i++) {
         if (slideMenu[i] == detail) {
-            $(".detail-image").attr("src", menu[i].img)
+            $(".section-details").css('background', `linear-gradient(180deg, ${menu[i].background1}, ${menu[i].background2})`)
+            $(".text-inset").css({ 'background': `linear-gradient(180deg, ${menu[i].backgroundText1}, ${menu[i].backgroundText2})`, 'background-clip': 'text', 'color': 'transparent' })
             $(".calories").text(menu[i].calories)
+            $(".detail-image").attr("src", menu[i].img)
             $(".desription").html(menu[i].text)
         }
     }
